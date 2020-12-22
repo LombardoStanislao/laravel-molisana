@@ -6,8 +6,51 @@
 }
 
 main {
-  background-image: image("../images/fondo-pag-speciali.jpg");
-  height: 1000px;
+  background-image: url("../images/fondo-pag-speciali.jpg");
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.container h3 {
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  color: #002d75;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.card-wrapper .card {
+  width: calc(100% / 3 - 15px);
+  margin: 5px;
+  position: relative;
+}
+.card-wrapper .card img {
+  max-width: 100%;
+}
+.card-wrapper .card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-wrapper .card .overlay a {
+  text-decoration: none;
+  color: #1c1a1a;
+  opacity: 1;
+}
+.card-wrapper .card:hover .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
 }
 
 header {
@@ -17,7 +60,6 @@ header {
 ul li {
   display: inline-block;
 }
-
 ul li a {
   display: inline-block;
   padding: 20px;
@@ -25,8 +67,66 @@ ul li a {
   color: #1c1a1a;
   font-weight: bold;
 }
-
 ul li a:hover {
   background-color: #b6dbe4;
 }
 
+.footer-wrapper {
+  padding-top: 80px;
+}
+
+.footer-wrapper::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-left, .footer-right {
+  float: left;
+}
+.footer-left ul, .footer-right ul {
+  list-style-type: none;
+}
+.footer-left ul li, .footer-right ul li {
+  display: block;
+}
+.footer-left ul li a, .footer-right ul li a {
+  text-decoration: none;
+  color: #929aa6;
+  padding: 3.3333333333px;
+  font-weight: lighter;
+}
+.footer-left ul li a:hover, .footer-right ul li a:hover {
+  background-color: white;
+  color: #848d9b;
+}
+.footer-left h2, .footer-right h2 {
+  color: #848d9b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-left {
+  width: 40%;
+}
+
+.footer-right {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-menu {
+  width: calc(100% / 2);
+}
+.footer-menu ul li a {
+  padding: 10px 20px 6.6666666667px 0;
+}
+
+.last-footer-menu {
+  margin-top: 20px;
+}
+
+#footer-background {
+  width: 100%;
+}
