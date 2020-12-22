@@ -44,13 +44,12 @@ main {
 .card-wrapper .card .overlay a {
   text-decoration: none;
   color: #1c1a1a;
-  opacity: 1;
 }
 .card-wrapper .card:hover .overlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 header {
