@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  color: #1c1a1a;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  background-color: #b6dbe4;
+}
+
