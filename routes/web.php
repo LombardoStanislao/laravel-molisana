@@ -36,7 +36,7 @@ Route::get('/product-details/{id}', function($id) {
     ];
 
     return view('detail', $data);
-});
+}) ->name('pagina-dettaglio');
 
 Route::get('/news', function () {
     return view('news');
