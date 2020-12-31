@@ -5,6 +5,21 @@
   font-family: sans-serif;
 }
 
+.max-width {
+  max-width: 100%;
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 main {
   background-image: url("../images/fondo-pag-speciali.jpg");
 }
@@ -128,4 +143,85 @@ ul li a:hover {
 
 #footer-background {
   width: 100%;
+}
+
+.pasta-title {
+  text-align: center;
+  background-color: #b7dae4;
+  margin-bottom: 1px;
+  padding: 20px 0;
+  color: #002d73;
+}
+
+.pasta-descriprion {
+  font-size: 24px;
+  color: #002d73;
+  font-weight: lighter;
+}
+
+.light-blue-background {
+  background-color: #b7dae4;
+  padding-bottom: 80px;
+}
+
+.pasta-table {
+  padding-bottom: 40px;
+}
+
+.pasta-single-table {
+  float: left;
+  width: calc(100% / 3);
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pasta-single-table p, .pasta-single-table span {
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+}
+
+.fa-clock {
+  margin-right: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #443e3b;
+}
+
+.border-right {
+  border-right: 1px solid #443e3b;
+}
+
+#acqua-del-molise {
+  max-width: 45%;
+}
+
+.prev-page, .next-page {
+  width: 70px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  transform: translate(0, -50%);
+  top: 50%;
+  transition: all 0.3s;
+}
+
+.prev-page {
+  left: 0;
+}
+
+.next-page {
+  right: 0;
+}
+
+.prev-page:hover, .next-page:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }

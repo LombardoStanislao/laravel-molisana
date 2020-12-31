@@ -1,0 +1,82 @@
+.pasta-title {
+  text-align: center;
+  background-color: #b7dae4;
+  margin-bottom: 1px;
+  padding: $spacing 0;
+  color: $blue-text-color;
+}
+
+
+.pasta-descriprion {
+  font-size: 24px;
+  color: $blue-text-color;
+  font-weight: lighter;
+
+}
+
+.light-blue-background {
+  background-color: #b7dae4;
+  padding-bottom: $spacing * 4;
+}
+
+.pasta-table {
+  padding-bottom: $spacing * 2;
+}
+
+.pasta-single-table {
+  float: left;
+  width: calc(100% / 3);
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pasta-single-table p, .pasta-single-table span {
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+}
+
+.fa-clock {
+  margin-right: $spacing / 2;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #443e3b;
+}
+
+.border-right {
+  border-right: 1px solid #443e3b;
+}
+
+#acqua-del-molise {
+  max-width: 45%;
+}
+
+.prev-page, .next-page {
+  width: 70px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,.3);
+  color: white;
+  text-decoration: none;
+  position: fixed;
+  transform: translate(0, -50%);
+  top: 50%;
+  transition: all .3s;
+}
+
+.prev-page {
+  left: 0;
+}
+
+.next-page {
+  right: 0;
+}
+
+.prev-page:hover, .next-page:hover {
+  background-color: rgba(0,0,0,.7);
+}

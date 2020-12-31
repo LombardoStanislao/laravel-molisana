@@ -5,6 +5,20 @@
     font-family: sans-serif;
 }
 
+.max-width  {
+  max-width: 100%;
+  display: block;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
 
 main {
     background-image: url('../images/fondo-pag-speciali.jpg');
