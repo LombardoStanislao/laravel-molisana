@@ -1,6 +1,6 @@
 @extends('layout/app')
 
-@section('page-title', 'La Molisana: pasta semole e farine di qualità')
+@section('page-title', $pasta_selezionata['titolo'] . ' | La Molisana')
 
 @section('content')
   <div class="pasta-title">
