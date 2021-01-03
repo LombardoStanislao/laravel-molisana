@@ -87,7 +87,7 @@ ul li a {
   color: #1c1a1a;
   font-weight: bold;
 }
-ul li a:hover {
+ul li a:hover, ul li a.active {
   background-color: #b6dbe4;
 }
 

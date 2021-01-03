@@ -14,7 +14,7 @@ ul {
             color: $text-color;
             font-weight: bold;
 
-            &:hover {
+            &:hover, &.active {
                 background-color: $main-color;
             }
         }

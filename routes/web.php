@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+}) ->name('homepage');
 
 Route::get('/products', function () {
 
@@ -46,14 +46,22 @@ Route::get('/products', function () {
 
 Route::get('/product-details/{id}', function($id) {
 
-    $array_pasta = config('pasta');
-    $product  = $array_pasta[$id];
+  $array_pasta = config('pasta');
+  $limite_id = count($array_pasta);
 
+  if(is_numeric($id) && $id >= 0 && $id < $limite_id) {
+    $product  = $array_pasta[$id];
     $data = [
-      'pasta_selezionata' => $product
+      'pasta_selezionata' => $product,
+      'id' => $id,
+      'limite_id' => $limite_id,
     ];
 
     return view('detail', $data);
+  } else {
+    abort('404');
+  }
+
 }) ->name('pagina-dettaglio');
 
 Route::get('/news', function () {
