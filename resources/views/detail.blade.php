@@ -9,11 +9,11 @@
     </div>
   </div>
 
-  <a class="prev-page" href="#">
+  <a class="prev-page" href="{{ ($id - 1 < 0) ? $limite_id - 1 : $id - 1 }}">
     <i class="fas fa-long-arrow-alt-left"></i>
   </a>
 
-  <a class="next-page" href="#">
+  <a class="next-page" href="{{ ($id + 1 >= $limite_id) ? 0 :  $id + 1 }}">
     <i class="fas fa-long-arrow-alt-right"></i>
   </a>
 
